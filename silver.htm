@@ -1,0 +1,31 @@
+<html>
+<br>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<STYLE>body{
+    font-family: 'Roboto', sans-serif;
+}
+SCript{
+    font-family: 'Roboto', sans-serif;
+}
+</STYLE>
+</head> 
+<body style="background-image:playbtn.jpeg;">
+    
+<input id="userinput" placeholder="enter your channeName name"> <br><br>
+<input id="userinput2" placeholder="enter your current subscribers"> <br><br>
+<button onclick="channeName()">MAKE MY PLAY BUTTON!</button>
+<SCript>
+    function channeName() {
+        var ad = document.getElementById("userinput").value;
+        var as = document.getElementById("userinput2").value;
+        document.write('<img src="playbtn.jpeg" style="width:625px; height:750px; position:absolute; top: 7px; left: 300px">');
+        document.write('<h3 style="width:500px; height:600px; position:absolute; top: 510px; left: 545px;color:white;">'+ad+'</h3>');
+        document.write('<h3 style="width:500px; height:600px; position:absolute; top: 545px; left: 590px;color:white; font-family:youtube-sans-bold.ttf">'+as+" subscribers"+'</h3>');
+    }
+</SCript>
+
+</body>
+</html>
